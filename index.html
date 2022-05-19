@@ -7,7 +7,7 @@
     <title>Colorado Calendar</title>
 </head>
 <body>
-    <div style="width: 360px">
+    <div class=container style="width: 360px; border: 1px solid black; padding-top: 5px">
 <form>
   
 
@@ -23,45 +23,6 @@
             <option value="3">County Three</option>
           </select>
       </div>
-
-    <div class="input-group mb-2">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Registration Start</span>
-        </div>
-        <input type="date" class="form-control" aria-label="registrationOpen">
-      </div>
-      <div class="input-group mb-2">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Registration Close</span>
-        </div>
-        <input type="date" class="form-control" aria-label="registrationClose">
-      </div>
-      <div class="input-group mb-2">
-   
-        <span class="input-group-text">Update SRI?</span>
-        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-           
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio1">Yes</label>
-          
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio2">No</label>
-          
-            
-          </div>
-          </div>
-          <!-- <div class="input-group mb-2">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Third Publication Date</span>
-            </div>
-            <input type="date" class="form-control" aria-label="saleStart">
-          </div>
-          <div class="input-group mb-2">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Newspaper Lead Time (Days) </span>
-            </div>
-            <input type="number" class="form-control" aria-label="saleStart">
-          </div> -->
       <div class="input-group mb-2">
         <div class="input-group-prepend">
           <span class="input-group-text">Sale Open</span>
@@ -75,6 +36,51 @@
         </div>
         <input type="date" class="form-control" aria-label="saleClose">
       </div>
+
+    <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Registration Start</span>
+        </div>
+        <input type="date" class="form-control" aria-label="registrationOpen">
+      </div>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Registration Close</span>
+        </div>
+        <input type="date" class="form-control" aria-label="registrationClose">
+      </div>
+
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Within</span>
+        </div>
+        <input type="number" class="form-control" aria-label="saleStart">
+        <span class="input-group-text" id="basic-addon2">Minutes</span>
+      </div>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Extend</span>
+        </div>
+        <input type="number" class="form-control" aria-label="saleStart">
+        <span class="input-group-text" id="basic-addon2">Minutes</span>
+      </div>
+
+
+
+     
+          <!-- <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Third Publication Date</span>
+            </div>
+            <input type="date" class="form-control" aria-label="saleStart">
+          </div>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Newspaper Lead Time (Days) </span>
+            </div>
+            <input type="number" class="form-control" aria-label="saleStart">
+          </div> -->
+     
       <div class="input-group mb-2">
         <span class="input-group-text">Create Batch?</span>
         <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -114,20 +120,7 @@
                         <label class="btn btn-outline-primary" for="btnradio6">No</label>
                     </div>  
                     </div> -->
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">Within</span>
-                        </div>
-                        <input type="number" class="form-control" aria-label="saleStart">
-                        <span class="input-group-text" id="basic-addon2">Minutes</span>
-                      </div>
-                      <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">Extend</span>
-                        </div>
-                        <input type="number" class="form-control" aria-label="saleStart">
-                        <span class="input-group-text" id="basic-addon2">Minutes</span>
-                      </div>
+                    
                       <div class="input-group mb-2">
                         <span class="input-group-text">Unsold Batch Wanted?</span>
                         <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -149,24 +142,38 @@
                             </div>
                             <input type="date" class="form-control" aria-label="registrationOpen">
                           </div>
+                          <div class="input-group mb-2">
+                            <span class="input-group-text">Update SRI?</span>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                               
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradio1">Yes</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradio2">No</label>
+                              </div>
+                              </div>
 
 
 
 
-
+                          <center>
+                            <button type="submit" class="btn btn-primary">Set Dates</button>
+                         
+                        </center>
                     
                
                     
                 </div>
-                
+               
                    
                 </div>
+                
             </div>
            
      
-
-      
-
+          
+            
 </form>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
