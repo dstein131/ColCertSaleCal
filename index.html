@@ -154,9 +154,20 @@
                 
 
                 <div class="tab-content">
-                  <div class="tab-pane active" id="listView">List View</div>
+                  <div class="tab-pane active" id="listView">
+                    
+                  </div>
                   <div class="tab-pane" id="calendarView">Calendar View</div>
-                  <div class="tab-pane" id="addView" >Additional Online Data</div>
+                  <div class="tab-pane" id="addView" >
+                    <form>
+                      <div class="mb-3">
+                        <label for="welcometext" class="form-label"><h5>Welcome Text:</h5><span>Batch Text (if more than 1 batch):</span></label>
+                        <textarea class="form-control" id="welcometext" rows="3"></textarea>                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                      </div>
+                    
+                      <button type="submit" class="btn btn-primary">Update Batch Text</button>
+                    </form>
+                  </div>
                 </div>
               </div>
                    
