@@ -7,92 +7,81 @@
     <title>Colorado Calendar</title>
 </head>
 <body>
+    <div id="test" style="display: flex">
     <div class=container style="width: 360px; border: 1px solid black; padding-top: 5px">
-<form>
-  
-
-  
-      <div class="input-group mb-1">
-        <div class="input-group-prepend ">
-          <span class="input-group-text">County</span>
-        </div>
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Select County</option>
-            <option value="1">County One</option>
-            <option value="2">County Two</option>
-            <option value="3">County Three</option>
-          </select>
-      </div>
-      <div class="input-group mb-1 ">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Sale Start</span>
-        </div>
-        <input type="datetime-local" class="form-control" aria-label="small">
-      </div>
-      
-      <div class="input-group mb-1">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Sale End</span>
-        </div>
-        <input type="datetime-local" class="form-control" aria-label="saleClose">
-      </div>
-
-    <div class="input-group mb-1">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Registration Start</span>
-        </div>
-        <input type="datetime-local" class="form-control" aria-label="registrationOpen">
-      </div>
-      <div class="input-group mb-1">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Registration Close</span>
-        </div>
-        <input type="datetime-local" class="form-control" aria-label="registrationClose">
-      </div>
-
-      <!-- <div class="input-group mb-1">      -->
-     
-
-        <div style="border: 1px dotted black; margin-top: 3px; margin-bottom: 5px; padding: 5px;">
-         <center>Dynamic Ending Only</center> 
-      <div class="input-group mb-1">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Within</span>
-        </div>
-        <input type="number" class="form-control" aria-label="saleStart">
-        <span class="input-group-text" id="basic-addon2">Minutes</span>
-      </div>
-      <div class="input-group mb-1">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Extend</span>
-        </div>
-        <input type="number" class="form-control" aria-label="saleStart">
-        <span class="input-group-text" id="basic-addon2">Minutes</span>
-      </div>
-    </div>
-      <div class="input-group mb-1">
-        <span class="input-group-text">Create Batch?</span>
-        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="btnradiosecond" id="btnradio3" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio3">Yes</label>
-            <input type="radio" class="btn-check" name="btnradiosecond" id="btnradio4" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio4">No</label>  
+      <form>
+        <div class="input-group mb-1">
+          <div class="input-group-prepend ">
+            <span class="input-group-text">County</span>
           </div>
-      </div>
-    
-      
-                
-                    <div class="input-group mb-1">
-                    <div class="input-group-prepend">
-                <span class="input-group-text">Number of Batches</span>
-                </div>
-                <input type="number" class="form-control" aria-label="saleClose">
+          <select class="form-select" aria-label="Default select example">
+              <option selected>Select County</option>
+              <option value="1">County One</option>
+              <option value="2">County Two</option>
+              <option value="3">County Three</option>
+            </select>
+        </div>
+        <div class="input-group mb-1 ">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Sale Start</span>
+          </div>
+          <input type="datetime-local" class="form-control" aria-label="small">
+        </div> 
+        <div class="input-group mb-1">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Sale End</span>
+          </div>
+          <input type="datetime-local" class="form-control" aria-label="saleClose">
+        </div>
+        <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Registration Start</span>
             </div>
-                <div class="input-group mb-1">
-                    <div class="input-group-prepend">
-                    <span class="input-group-text">Batch Open</span>
-                    </div>
-                    <input type="datetime-local" class="form-control" aria-label="batchOpen">
+            <input type="datetime-local" class="form-control" aria-label="registrationOpen">
+          </div>
+        <div class="input-group mb-1">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Registration Close</span>
+          </div>
+          <input type="datetime-local" class="form-control" aria-label="registrationClose">
+        </div>
+        <div style="border: 1px dotted black; margin-top: 3px; margin-bottom: 5px; padding: 5px;">
+          <center>Dynamic Ending Only</center> 
+        <div class="input-group mb-1">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Within</span>
+          </div>
+          <input type="number" class="form-control" aria-label="saleStart">
+          <span class="input-group-text" id="basic-addon2">Minutes</span>
+        </div>
+        <div class="input-group mb-1">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Extend</span>
+          </div>
+          <input type="number" class="form-control" aria-label="saleStart">
+          <span class="input-group-text" id="basic-addon2">Minutes</span>
+        </div>
+        </div>
+          <div class="input-group mb-1">
+            <span class="input-group-text">Create Batch?</span>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradiosecond" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio3">Yes</label>
+                <input type="radio" class="btn-check" name="btnradiosecond" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio4">No</label>  
+              </div>
+          </div>
+          <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Number of Batches</span>
+            </div>
+            <input type="number" class="form-control" aria-label="saleClose">
+            </div>
+            <div class="input-group mb-1">
+              <div class="input-group-prepend">
+                 <span class="input-group-text">Batch Open</span>
+                </div>
+                <input type="datetime-local" class="form-control" aria-label="batchOpen">
                 </div>
                 
                 <div class="input-group mb-1">
@@ -141,20 +130,49 @@
 
                           <center><button style="margin-top: 5px" type="submit" class="btn btn-primary">Set Dates</button></center>
                     
-               
-                    
                 </div>
-               
+                <div style="border: 1px solid black; padding: 5px;">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" data-bs-toggle="tab" href="#listView">List View</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#calendarView">Calendar View</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#addView">Add'l Online Data</a>
+                  </li>
+                </ul>
+              
+                
+
+                <div class="tab-content">
+                  <div class="tab-pane active" id="listView">List View</div>
+                  <div class="tab-pane" id="calendarView">Calendar View</div>
+                  <div class="tab-pane" id="addView" >Additional Online Data</div>
+                </div>
+              </div>
                    
-                </div>
+               
                 
             </div>
+          </div>
            
      
           
             
-</form>
-</div>
+          </form>
+        
+          
+          </div>
+
+
+        
+        </div>
+
+       
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
 </body>
 </html>
